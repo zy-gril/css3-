@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>jQuery仿简书首页幻灯片图片切换效果</title>
+
+<link rel="stylesheet" href="css/carousel.css">
+<style>
+	#banner{
+		width:1000px;margin:0 auto;
+	}
+</style>
+
+</head>
+<body><script src="/demos/googlegg.js"></script>
+
+<div id='banner'></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src='js/carousel.js'></script>
+<script type="text/javascript">
+	window.onload = function(){
+		var banner = new Carousel();
+		//图片地址数组。不要少于三张
+		var imgSrcDate = ["img/a1.png","img/a2.png","img/a3.png","img/a4.png","img/a5.png","img/a6.png"];
+		banner.init({
+			container:"#banner",
+			datas:imgSrcDate,
+			autoplaySpeed:5000,
+			autoplay:false
+		});
+	}
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
+<p>来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人素材</a></p>
+</div>
+</body>
+</html>

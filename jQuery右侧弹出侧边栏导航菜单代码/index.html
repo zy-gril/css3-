@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>jQuery右侧弹出侧边栏导航菜单代码</title>
+
+<link type="text/css" href="css/index.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    function anim(duration){
+        $('#mint').animate(
+            {height: 'toggle'},
+            {duration: duration}
+        );
+    }
+    $('#closebtn').click(function() {
+        $('#mintbar').slideUp();
+        anim(600);
+    });
+   
+    $('#mint').click(function() {
+        anim(600);
+        $('#mintbar').slideDown('slow');
+    });
+	
+});
+</script>
+
+</head>
+
+<body><script src="/demos/googlegg.js"></script>
+
+<div class="box-bj"><img src="images/wd011.jpg" /></div>
+
+<div id="mintbar"><a id="closebtn" href="#"><img src="images/wd02.png" /></a></div>
+
+<div id="mint" style="display:none;position:absolute;top:0;right:0px;">
+	<div class="box-nav-bj"><img style="right:0px; top:0px;" src="images/wd06.png" /></div>
+	<div class="box-nav">
+		<li><a href="#">关于我们</a></li>
+		<li><a href="#">产品展示</a></li>
+		<li><a href="#">案例展示</a></li>
+		<li><a href="#">新闻中心</a></li>
+		<li><a href="#">新闻资讯</a></li>
+		<li><a href="#">联系我们</a></li>
+	</div>
+	<img src="images/wd07.png" alt="丝带"/>
+	<div class="box-phone">
+		<p>服务热线：</p>
+		<p>400-091-6001</p>
+	</div>
+</div>
+
+<div class="box-dibu">
+    <div class="box-dibu1">
+       <p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+<p>来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人素材</a></p>
+    </div>
+    <div class="box-dibu2">
+       <a href="#"><img src="images/wd04.png" /></a>
+       <a href="#"><img src="images/wd05.png" /></a>
+    </div>
+</div>
+
+</body>
+</html>

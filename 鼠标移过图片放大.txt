@@ -1,0 +1,28 @@
+//鼠标移过图片放大
+//1.在CSS中加入以下代码
+.top{
+ width:1180px;
+ height:320px;
+ margin:0px auto;
+ float:clear;
+overflow:hidden;
+  
+}
+.topimg{
+	width:1180px;
+ height:320px;
+ cursor:pointer;
+transition:100 0.6s;
+}
+.topimg:hover{
+      //transform:scale(0.9,1.0);
+     transform:scale(0.9);
+   }
+
+//2.在网页中加入以下代码
+<div class="top">
+	  <div class="topimg">
+	  
+           <img src="images/logo.gif" class="test">
+         
+	</div>
